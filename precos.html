@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>
+        <img src="img/logo1.jpg" alt="Uncle Barber" class="logo" />
+      </h1>
+
+      <nav>
+        <div class="nav-wrapper red darken-4" style="text-align: left">
+          <a href="index.html" class="brand-logo">Uncle Barber</a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="barbearia.html">Barberia</a></li>
+            <li><a href="servicos.html">Serviços</a></li>
+            <li><a href="precos.html">Preços</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="localizacao.html">Localização</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <img src="img/barbearia1.jpg" alt="Barberia" class="painel" />
+    </header>
+
+    <main>
+      <h2>Preços</h2>
+      <hr />
+      <p>
+        <span
+          >Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi quo
+          odit nobis, blanditiis pariatur assumenda ullam vero labore in esse,
+          ratione architecto! Dolorum natus labore odio nisi ducimus, blanditiis
+          eius.</span
+        >
+        <span
+          >Optio consequuntur nulla amet eos explicabo ducimus incidunt vel in
+          ea, iure, cumque eveniet voluptatem molestiae commodi, dignissimos
+          harum at obcaecati nostrum nihil ab deserunt quia placeat deleniti id!
+          Ducimus!</span
+        >
+      </p>
+
+      <hr />
+
+      <div class="row">
+        <div class="col s12 m6">
+          <h2 class="header">Corte</h2>
+          <div class="card horizontal">
+            <div class="card-image">
+              <img src="img/corte1.jpg" class="modal-trigger" href="#modal1" />
+            </div>
+            <div class="card-stacked">
+              <div class="card-content">
+                <p>Corte Adulto: R$20,00</p>
+                <p>Corte Criança: R$15,00</p>
+                <p>Corte + Barba: R$35,00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col s12 m6">
+          <h2 class="header">Barba</h2>
+          <div class="card horizontal">
+            <div class="card-image">
+              <img src="img/barba1.jpg" class="modal-trigger" href="#modal2" />
+            </div>
+            <div class="card-stacked">
+              <div class="card-content">
+                <p>Barba: R$20,00</p>
+                <p>Barba com paninho: R$25,00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer></footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".modal").modal();
+      });
+    </script>
+  </body>
+</html>

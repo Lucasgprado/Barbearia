@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>
+        <img src="img/logo1.jpg" alt="Uncle Barber" class="logo" />
+      </h1>
+
+      <nav>
+        <div class="nav-wrapper red darken-4" style="text-align: left">
+          <a href="index.html" class="brand-logo">Uncle Barber</a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="barbearia.html">Barberia</a></li>
+            <li><a href="servicos.html">Serviços</a></li>
+            <li><a href="precos.html">Preços</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="localizacao.html">Localização</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <img src="img/barbearia1.jpg" alt="Barberia" class="painel" />
+    </header>
+
+    <main>
+      <h2>Entre em contato conosco</h2>
+      <hr />
+
+      <div class="row">
+       
+        <form class="col s12">
+          
+          <div class="row">
+            <div class="input-field col s6">
+              <i class="material-icons prefix">account_circle</i>
+              <input id="nomecompleto" type="text" class="validate" />
+              <label for="nomecompleto">Nome Completo</label>
+            </div>
+            <div class="input-field col s6">
+              <i class="material-icons prefix">email</i>
+              <input id="email" type="email" class="validate" />
+              <label for="email">E-Mail</label>
+            </div>
+            
+          </div>
+
+          <div class="row">
+            <div class="input-field col s3">
+              <i class="material-icons prefix">local_phone</i>
+              <input id="telefone" type="tel" class="validate" />
+              <label for="telefone">Telefone</label>
+            </div>
+
+          </div>
+
+          <hr />
+
+          <button
+            class="btn waves-effect waves-light"
+            type="submit"
+            name="action"
+          >
+            Submit
+            <i class="material-icons right">check</i>
+          </button>
+
+        </form>
+      </div>
+      
+    </main>
+
+    <footer></footer>
+
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".datepicker").datepicker();
+      });
+      $(document).ready(function () {
+        $("select").formSelect();
+      });
+      $(document).ready(function () {
+        $(".sidenav").sidenav();
+      });
+    </script>
+  </body>
+</html
